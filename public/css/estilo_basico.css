@@ -9,7 +9,7 @@ p, span {
 }
 
 h1 {
-    color: #ffffff;
+    color: #333333;
     font-size: 28px;
 }
 
@@ -25,7 +25,7 @@ input, select, textarea, button {
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
-    color: #333;
+    color: #333333;
 }
 
 .texto-branco {
@@ -140,7 +140,7 @@ button:hover {
 .titulo-pagina-2 {
     padding: 70px 0px 10px 0px;
     margin-bottom: 10px;
-    background-color: #2a9ee2;
+    background-color: rgb(255,196,48);
     text-align: center;
 }
 
@@ -152,7 +152,11 @@ button:hover {
 .informacao-pagina p{
     color: #333;
 }
-
+#text-span{ 
+    text-align: justify;
+    margin-left: 300px;
+    margin-right: 300px;
+}
 .rodape {
     width: 100%;
 }
