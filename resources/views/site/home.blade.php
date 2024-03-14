@@ -10,6 +10,15 @@
 
         <div class="sobre-nos">
             <div style="width:100%; margin-left: auto; margin-right: auto;">
+                <h1>Estoque Inteligente: <br>Simplifica o controle de estoque <br>e maximiza seus resultados!</h1>
+                <br>
+                <h2>Quem somos?</h2>
+                <span id="text-span">Seja bem-vindo à Estoque Inteligente, onde a busca pela excelência e inovação se encontra com o compromisso inflexível com a eficiência. 
+                    Nascemos com a visão ousada de redefinir os padrões da indústria de distribuição, e desde então, consolidamos nossa posição como uma empresa 
+                    dedicada a oferecer soluções inovadoras e personalizadas.Na Estoque Inteligente, acreditamos que o sucesso de nossos clientes é o nosso sucesso. 
+                    Por isso, estamos sempre disponíveis para oferecer suporte personalizado e assistência especializada, garantindo que cada cliente possa aproveitar 
+                    ao máximo nossa tecnologia e alcançar seus objetivos de negócios.
+                </span>
                 <h2>Quem somos?</h2>
                 <span id="text-span">Seja bem-vindo à Estoque Inteligente, onde a busca pela excelência e inovação se encontra com o compromisso inflexível com a eficiência. 
                     Nascemos com a visão ousada de redefinir os padrões da indústria de distribuição, e desde então, consolidamos nossa posição como uma empresa 

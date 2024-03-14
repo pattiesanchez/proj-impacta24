@@ -153,9 +153,10 @@ button:hover {
     color: #333;
 }
 #text-span{ 
-    text-align: justify;
-    margin-left: 300px;
-    margin-right: 300px;
+    text-align: center;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .rodape {
     width: 100%;
