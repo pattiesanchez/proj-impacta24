@@ -19,24 +19,24 @@
 
         <div class="informacao-pagina">
             <div style="width: 50%; margin-left: auto; margin-right: auto">
-                <table border="1" width="100%" style="color: white">
+                <table width="100%" style="color: white">
                     <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Descrição</th>
-                            <th>Peso</th>
-                            <th>Unidades</th>
+                            <th style="color: rgb(255,196,48)">Nome</th>
+                            <th style="color: rgb(255,196,48)">Descrição</th>
+                            <th style="color: rgb(255,196,48)">Peso</th>
+                            <th style="color: rgb(255,196,48)">Unidades</th>
                         </tr>
                     </thead><br>
                     <tbody> 
                         @foreach($produtos as $produto)
                             <tr>
-                                <td>{{ $produto->nome }}</td>
-                                <td>{{ $produto->descricao }}</td>
-                                <td>{{ $produto->peso }}</td>
-                                <td>{{ $produto->unidade_id }}</td>
-                                <td><a href=" " style="color: white">Excluir</a></td>
-                                <td><a href=" " style="color: white">Editar</a></td>
+                                <td class="borda-branca">{{ $produto->nome }}</td>
+                                <td class="borda-branca">{{ $produto->descricao }}</td>
+                                <td class="borda-branca">{{ $produto->peso }}</td>
+                                <td class="borda-branca">{{ $produto->unidade }}</td>
+                                <td class="borda-branca"><a href=" " style="color: white">Excluir</a></td>
+                                <td class="borda-branca"><a href=" " style="color: white">Editar</a></td>
                             </tr>
                         @endforeach
                     </tbody> 

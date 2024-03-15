@@ -26,8 +26,8 @@ class ProdutoController extends Controller
      */
     public function create()
     {
-        $unidades = Unidade::all(); 
-        return view('app.produto.create', ['unidades' => $unidades]);
+        $produtos = Produto::all(); 
+        return view('app.produto.create', ['produtos' => $produtos]);
     }
 
     /**
@@ -38,6 +38,25 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
+        $regras = [ 
+            'nome' => 'required|min:3|max:40',
+            'descricao' => 'required|min:3|max:2000',
+            'peso' => 'required|integer',
+            'unidade' => 'required|integer',
+        ];
+
+        $feedbacks = [ 
+            'required' => 'O campo deve ser preenchido!',
+            'nome.min' => 'O campo deve conter no mínimo 3 caracteres',
+            'nome.max' => 'O campo deve conter no máximo 40 caracteres',
+            'descricao.min' => 'O campo deve conter no mínimo 3 caracteres',
+            'descricao.max' => 'O campo deve conter no máximo 2000 caracteres',
+            'peso.integer' => 'O campo deve ser um número inteiro',
+            'unidade.integer' => 'O campo deve ser um número inteiro',
+        ];
+
+        $request->validate($regras, $feedbacks);
+
         Produto::create($request->all());
         return redirect()->route('produto.index');
     }

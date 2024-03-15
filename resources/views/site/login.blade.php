@@ -12,14 +12,14 @@
                 <form action={{ route('site.login') }} method="post">
                     @csrf
                     <input name="usuario" value="{{ old('usuario') }}" type="text" placeholder="Usuário" class="borda-branca" style="color: white">
-                    {{ $errors->has('usuario') ? $errors->first('usuario') : '' }}
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('usuario') ? $errors->first('usuario') : '' }}</div>
 
                     <input name="senha" value="{{ old('senha') }}" type="password" placeholder="Senha" class="borda-branca">
-                    {{ $errors->has('senha') ? $errors->first('senha') : '' }}
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('senha') ? $errors->first('senha') : '' }}</div>
 
                     <button type="submit" class="borda-branca">Acessar</button>
                 </form>
-                {{ isset($erro) && $erro != '' ? $erro : '' }}
+                <div class="alert alert-danger" style="color: white;">{{ isset($erro) && $erro != '' ? $erro : '' }}</div>
             </div>
         </div>
     </div>

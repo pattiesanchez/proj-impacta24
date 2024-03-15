@@ -21,15 +21,18 @@
             <div style="width: 50%; margin-left: auto; margin-right: auto">
                 <form method="post" action="{{ route('produto.store') }}">
                     @csrf
-                    <input type="text" name="nome" value="" placeholder="Nome" class="borda-branca">
-                    <input type="text" name="descricao" value="" placeholder="Descrição" class="borda-branca">
-                    <input type="text" name="peso" value="" placeholder="Peso" class="borda-branca">
-                    <select name="unidade_id" style="background-color:black; border: #fffff">
-                        <option>--- Unidades em estoque ----</option>
-                        @foreach($unidades as $unidade)
-                            <option value="{{ $unidade->id }}">{{ $unidade->descricao }}</option>
-                        @endforeach
-                    </select>
+                    <input type="text" name="nome" value="{{ old('nome') }}" placeholder="Nome" class="borda-branca">
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('nome') ? $errors->first('nome') : '' }}</div>
+
+                    <input type="text" name="descricao" value="{{ old('descricao') }}" placeholder="Descrição" class="borda-branca">
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('descricao') ? $errors->first('descricao') : '' }}</div>
+
+                    <input type="text" name="peso" value="{{ old('peso') }}" placeholder="Peso" class="borda-branca">
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('peso') ? $errors->first('peso') : '' }}</div>
+
+                    <input type="text" name="unidade" value="{{ old('unidade') }}" placeholder="Unidades em estoque" class="borda-branca">
+                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('unidade') ? $errors->first('unidade') : '' }}</div>
+
                     <button type="submit" class="borda-branca">Cadastrar</button>
                 </form>
 
