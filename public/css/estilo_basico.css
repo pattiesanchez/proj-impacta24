@@ -25,7 +25,7 @@ input, select, textarea, button {
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
-    color: #333333;
+    color: #ffffff;
 }
 
 .texto-branco {
@@ -33,34 +33,30 @@ input, select, textarea, button {
 }
 
 .borda-branca {
-    border: solid 1px #fff;
-}
-
-.borda-preta {
-    border: solid 1px #333;
+    border: solid 1px #ffffff;
 }
 
 button {
-    background-color: #7ab829;
+    background-color: rgb(255,196,48);
     cursor: pointer;
-    color: #fff;
+    color: black;
 }
 
 button:hover {
-    background-color: #6ea22c;
+    background-color: #ffffff;
 }
 
 ::placeholder {
-    color: #333333;
+    color: #ffffff;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: #333333;
+    color: #ffffff;
 }
 
 ::-ms-input-placeholder {
-    color: #333333;
+    color: #ffffff;
 }
 
 .topo {
@@ -96,11 +92,11 @@ button:hover {
 .menu a {
     text-decoration: none;
     padding: 14px 16px;
-    color: #333;
+    color: black;
 }
 
 .menu a:hover {
-    color: #268fd0;
+    color: white;
 }
 
 .conteudo-destaque {
@@ -108,21 +104,6 @@ button:hover {
     height: 100%;
     min-height: 800px;
 }
-
-.esquerda {
-    float:left;
-    background-color: #268fd0;
-    width: 60%;
-    height: 100%;
-}
-
-.direita {
-    float:right;
-    background-color: #2a9ee2;
-    width: 40%;
-    height: 100%;
-}
-
 
 .conteudo-pagina {
     width: 100%;
@@ -132,12 +113,6 @@ button:hover {
 }
 
 .titulo-pagina {
-    padding: 100px 0px 60px 0px;
-    background-color: #2a9ee2;
-    text-align: center;
-}
-
-.titulo-pagina-2 {
     padding: 70px 0px 10px 0px;
     margin-bottom: 10px;
     background-color: rgb(255,196,48);
@@ -172,7 +147,7 @@ button:hover {
 }
 
 .redes-sociais, .area-contato, .localizacao p, span {
-    color: #333333;
+    color: black;
 }
 
 .redes-sociais img {
