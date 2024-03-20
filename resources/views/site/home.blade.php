@@ -4,9 +4,9 @@
 
 @section('conteudo')
    <div class="conteudo-pagina" style="background-color: black">
-        <title>E.I - HOME</title>
+        <title>Homepage</title>
         <div class="titulo-pagina">
-            <h1><br>Home</h1><br>
+            <h1><br>Homepage  </h1><br>
         </div>
         <div class="sobre-nos">
             <div style="width:100%; margin-left: auto; margin-right: auto; padding-bottom: 50px">

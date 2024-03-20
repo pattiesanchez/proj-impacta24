@@ -5,7 +5,7 @@
 @section('conteudo')
 
     <div class="conteudo-pagina" style="background-color: white">
-
+        <title>Listagem de Produto</title>
         <div class="titulo-pagina">
             <br><h1>Listagem de Produtos</h1><br>
         </div>
