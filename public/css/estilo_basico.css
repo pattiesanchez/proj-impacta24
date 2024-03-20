@@ -25,29 +25,25 @@ input, select, textarea, button {
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
 }
 
-.texto-branco {
-    color: #ffffff;
-}
-
-.borda-branca {
-    border: solid 1px #ffffff;
+.borda-preta {
+    border: solid 1px #000000;
 }
 
 button {
-    background-color: rgb(255,196,48);
+    background-color: #000000;
     cursor: pointer;
-    color: black;
+    color: white;
 }
 
 button:hover {
-    background-color: #ffffff;
+    background-color: rgb(255,196,48);
 }
 
 ::placeholder {
-    color: #ffffff;
+    color: #000000;
     opacity: 1;
 }
 
@@ -139,15 +135,15 @@ button:hover {
 
 .redes-sociais, .area-contato, .localizacao {
     width: 33.333%;
-    border-top:solid 1px #ccc;
+    border-top:solid 1px #ffffff;
     float: left;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: black;
     height: 250px;
 }
 
 .redes-sociais, .area-contato, .localizacao p, span {
-    color: black;
+    color: #ffffff;
 }
 
 .redes-sociais img {
