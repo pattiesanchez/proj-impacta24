@@ -7,9 +7,9 @@
     <div class="conteudo-pagina" style="background-color: white">
 
         <div class="titulo-pagina">
-            <h1>Listagem de Produtos</h1>
+            <br><h1>Listagem de Produtos</h1><br>
         </div>
-        <br><br>
+        <br>
         <div class="menu">
             <ul>
                 <li><a href="{{ route('produto.create') }}" style="color: black">Novo</a></li>

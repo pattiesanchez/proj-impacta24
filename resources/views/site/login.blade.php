@@ -5,7 +5,7 @@
 @section('conteudo')
     <div class="conteudo-pagina" style="background-color: white; height: 65%">
         <div class="titulo-pagina">
-            <h1>Login</h1>
+            <h1><br>Login</h1><br>
         </div>
         <div class="informacao-pagina">
             <div style="width:30%; margin-left: auto; margin-right: auto; margin-top: 5%">
@@ -31,13 +31,13 @@
             <img src="{{ asset('img/youtube.png') }}">
         </div>
         <div class="area-contato">
-            <h2 style="color: white">Contato</h2>
+            <h2 style="color: white">Contato</h2><br>
             <span>(11) 3333-4444</span>
             <br>
             <span>estoque-inteligente@dominio.com.br</span>
         </div>
         <div class="localizacao">
-            <h2 style="color: white">Localização</h2>
+            <h2 style="color: white">Localização</h2><br>
             <img src="{{ asset('img/mapa.png') }}">
         </div>
     </div>
