@@ -15,18 +15,18 @@
                 <li><a href="{{ route('produto.create') }}" style="color: black">Novo</a></li>
                 <li><a href=" " style="color: black">Consultar</a></li>
             </ul>
-        </div><br><br>
+        </div><br>
 
         <div class="informacao-pagina">
             <div style="width: 50%; margin-left: auto; margin-right: auto">
                 <table width="100%" style="color: black">
                     <thead>
                         <tr>
-                            <th style="color: rgb(255,196,48)">Nome</th>
-                            <th style="color: rgb(255,196,48)">Descrição</th>
-                            <th style="color: rgb(255,196,48)">Peso</th>
-                            <th style="color: rgb(255,196,48)">Unidades</th>
-                            <th style="color: rgb(255,196,48);">Ações</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Peso</th>
+                            <th>Unidades</th>
+                            <th>Ações</th>
                         </tr>
                     </thead><br>
                     <tbody> 
@@ -41,14 +41,8 @@
                             </tr>
                         @endforeach
                     </tbody> 
-                </table><br>
-
+                </table>
                 {{ $produtos->appends($request)->links() }}
-
-                {{ $produtos->count() }}
-                {{ $produtos->total() }}
-                {{ $produtos->firstItem() }}
-                {{ $produtos->lastItem() }}
                 <br>
                 <div style="color: preta">Exibindo {{ $produtos->count() }} produtos de  {{ $produtos->total() }} (de  {{ $produtos->firstItem() }} a  {{ $produtos->lastItem() }})</div>
             </div>
