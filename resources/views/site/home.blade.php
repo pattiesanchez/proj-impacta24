@@ -35,7 +35,7 @@
                                 </div>
                             </div>
 
-                            <div class="card services-item">
+                            <div class="card services-item"  style="height: 20rem;">
                                 <div class="card-body">
                                     <h2 class="services-title">Visão</h2>
                                     <p class="services-text" style="color: black">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                 
-                            <div class="card services-item" style="height: 20.50rem;">
+                            <div class="card services-item"  style="height: 20rem;">
                                 <div class="card-body">
                                     <h2 class="services-title">Valores</h2>
                                     <p class="services-text" style="color: black">

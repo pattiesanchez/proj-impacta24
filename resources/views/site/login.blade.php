@@ -10,17 +10,17 @@
         </div>
         <div class="informacao-pagina">
             <div style="width:30%; margin-left: auto; margin-right: auto; margin-top: 5%">
-                <form action={{ route('site.login') }} method="post">
+                <form method="post" action="{{ route('site.login') }}">
                     @csrf
-                    <input name="usuario" value="{{ old('usuario') }}" type="text" placeholder="Usuário" class="borda-branca" style="color: white">
-                    <div class="alert">{{ $errors->has('usuario') ? $errors->first('usuario') : '' }}</div>
-
-                    <input name="senha" value="{{ old('senha') }}" type="password" placeholder="Senha" class="borda-branca">
-                    <div class="alert">{{ $errors->has('senha') ? $errors->first('senha') : '' }}</div>
+                    <input name="usuario" value="{{ old('usuario') }}" type="text" placeholder="Usuário">
+                        {{ $errors->has('usuario') ? $errors->first('usuario') : '' }}<br><br>
+                    
+                    <input name="senha" value="{{ old('senha') }}" type="password" placeholder="Senha">
+                        {{ $errors->has('senha') ? $errors->first('senha') : '' }}<br><br>
 
                     <button type="submit" class="borda-branca">Acessar</button>
                 </form>
-                <div class="alert">{{ isset($erro) && $erro != '' ? $erro : '' }}</div>
+                {{ isset($erro) && $erro != '' ? $erro : '' }}
             </div>
         </div>
     </div>

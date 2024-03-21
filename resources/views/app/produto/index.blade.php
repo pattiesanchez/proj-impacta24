@@ -18,32 +18,32 @@
 
         <div class="informacao-pagina">
             <div style="width: 50%; margin-left: auto; margin-right: auto">
-                <table width="100%" style="color: black">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Descrição</th>
-                            <th>Peso</th>
-                            <th>Unidades</th>
-                            <th>Ações</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Peso</th>
+                            <th scope="col">Unidades</th>
+                            <th scope="col" colspan="2">Ações</th>
                         </tr>
-                    </thead><br>
-                    <tbody> 
+                    </thead>
+                    <tbody>
                         @foreach($produtos as $produto)
                             <tr>
-                                <td class="borda-preta">{{ $produto->nome }}</td>
-                                <td class="borda-preta">{{ $produto->descricao }}</td>
-                                <td class="borda-preta">{{ $produto->peso }}</td>
-                                <td class="borda-preta">{{ $produto->unidade }}</td>
-                                <td class="borda-preta"><a href=" " style="color: black">Excluir</a></td>
-                                <td class="borda-preta"><a href=" " style="color: black">Editar</a></td>
+                                <td>{{ $produto->nome }}</td>
+                                <td>{{ $produto->descricao }}</td>
+                                <td>{{ $produto->peso }}</td>
+                                <td>{{ $produto->unidade }}</td>
+                                <td><a href=" " style="color: black">Excluir</a></td>
+                                <td><a href=" " style="color: black">Editar</a></td>
                             </tr>
                         @endforeach
-                    </tbody> 
+                    </tbody>
                 </table>
                 {{ $produtos->appends($request)->links() }}
                 <br>
-                <div style="color: preta">Exibindo {{ $produtos->count() }} produtos de  {{ $produtos->total() }} (de  {{ $produtos->firstItem() }} a  {{ $produtos->lastItem() }})</div>
+                <div>Exibindo {{ $produtos->count() }} produtos de  {{ $produtos->total() }} (de  {{ $produtos->firstItem() }} a  {{ $produtos->lastItem() }})</div>
             </div>
         </div>
     </div>

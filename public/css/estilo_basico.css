@@ -154,6 +154,11 @@ button:hover {
     padding-top: 7%;
 }
 
+.table-bordered{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 :root {
     --text-light: #ffffff;
     --bg-primary: #000000;
