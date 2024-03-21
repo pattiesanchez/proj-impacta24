@@ -3,13 +3,12 @@
 @section('titulo', 'Produto')
 
 @section('conteudo')
-
-    <div class="conteudo-pagina" style="background-color: white">
+<div class="conteudo-pagina">
         <title>Listagem de Produto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="titulo-pagina">
-            <br><h1>Listagem de Produtos</h1><br>
+            <h1><br>Listagem de Produto</h1>
         </div>
-        <br>
         <div class="menu">
             <ul>
                 <li><a href="{{ route('produto.create') }}" style="color: black">Novo</a></li>

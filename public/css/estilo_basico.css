@@ -132,6 +132,7 @@ button:hover {
 }
 .rodape {
     width: 100%;
+    padding-top: 5%;
 }
 
 .redes-sociais, .area-contato, .localizacao {
@@ -152,9 +153,6 @@ button:hover {
     margin: 0px 15px 0px 15px;
     padding-top: 7%;
 }
-
-
-/************************ pagina home ***********************/
 
 :root {
     --text-light: #ffffff;

@@ -3,7 +3,8 @@
 @section('titulo', $titulo)
 
 @section('conteudo')
-    <div class="conteudo-pagina" style="background-color: white; height: 65%">
+<div class="conteudo-pagina" style="background-color: white; height: 65%">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="titulo-pagina">
             <h1><br>Login</h1><br>
         </div>
@@ -12,14 +13,14 @@
                 <form action={{ route('site.login') }} method="post">
                     @csrf
                     <input name="usuario" value="{{ old('usuario') }}" type="text" placeholder="Usuário" class="borda-branca" style="color: white">
-                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('usuario') ? $errors->first('usuario') : '' }}</div>
+                    <div class="alert">{{ $errors->has('usuario') ? $errors->first('usuario') : '' }}</div>
 
                     <input name="senha" value="{{ old('senha') }}" type="password" placeholder="Senha" class="borda-branca">
-                    <div class="alert alert-danger" style="color: white;">{{ $errors->has('senha') ? $errors->first('senha') : '' }}</div>
+                    <div class="alert">{{ $errors->has('senha') ? $errors->first('senha') : '' }}</div>
 
                     <button type="submit" class="borda-branca">Acessar</button>
                 </form>
-                <div class="alert alert-danger" style="color: white;">{{ isset($erro) && $erro != '' ? $erro : '' }}</div>
+                <div class="alert">{{ isset($erro) && $erro != '' ? $erro : '' }}</div>
             </div>
         </div>
     </div>
