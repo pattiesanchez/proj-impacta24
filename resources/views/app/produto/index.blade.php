@@ -11,7 +11,7 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="{{ route('produto.create') }}" style="color: black">Novo</a></li>
+                <li><a href="{{ route('produto.create') }}" style="color: black">Novo Produto</a></li>
                 <li><a href=" " style="color: black">Consultar</a></li>
             </ul>
         </div><br>
@@ -25,7 +25,7 @@
                             <th scope="col">Descrição</th>
                             <th scope="col">Peso</th>
                             <th scope="col">Unidades</th>
-                            <th scope="col" colspan="2">Ações</th>
+                            <th scope="col" colspan="3">Ações</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +35,7 @@
                                 <td>{{ $produto->descricao }}</td>
                                 <td>{{ $produto->peso }}</td>
                                 <td>{{ $produto->unidade }}</td>
+                                <td><a href="{{  route('produto.show', ['produto' =>  $produto->id ]) }}" style="color: black">Visualizar</a></td>
                                 <td><a href=" " style="color: black">Excluir</a></td>
                                 <td><a href=" " style="color: black">Editar</a></td>
                             </tr>
