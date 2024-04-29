@@ -12,7 +12,6 @@
         <div class="menu">
             <ul>
                 <li><a href="{{ route('produto.create') }}" style="color: black">Novo Produto</a></li>
-                <li><a href=" " style="color: black">Consultar</a></li>
             </ul>
         </div><br>
 
@@ -24,7 +23,7 @@
                             <th scope="col">Nome</th>
                             <th scope="col">Descrição</th>
                             <th scope="col">Peso</th>
-                            <th scope="col">Unidades</th>
+                            <th scope="col">Unidades Estoque</th>
                             <th scope="col" colspan="3">Ações</th>
                         </tr>
                     </thead>
@@ -36,8 +35,15 @@
                                 <td>{{ $produto->peso }}</td>
                                 <td>{{ $produto->unidade }}</td>
                                 <td><a href="{{  route('produto.show', ['produto' =>  $produto->id ]) }}" style="color: black">Visualizar</a></td>
-                                <td><a href=" " style="color: black">Excluir</a></td>
-                                <td><a href=" " style="color: black">Editar</a></td>
+                                <td>
+                                    <form id="form_{{$produto->id}}" method="post" action="{{ route('produto.destroy', ['produto' => $produto->id]) }}">
+                                        @method('DELETE')
+                                        @csrf
+                                        <!--<button type="submit">Excluir</button>-->
+                                        <a href="#" onclick="document.getElementById('form_{{$produto->id}}').submit()">Excluir</a>
+                                    </form>
+                                </td>
+                                <td> <a href="{{ route('produto.edit', ['produto' => $produto->id ]) }}">Editar</a> </td>
                             </tr>
                         @endforeach
                     </tbody>

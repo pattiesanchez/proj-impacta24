@@ -18,7 +18,7 @@
         </div><br><br>
 
         <div class="informacao-pagina">
-           <div style="width: 50%; margin-left: auto; margin-right: auto">
+           <div style="width: 60%; margin-left: auto; margin-right: auto">
                 <table class="table table-bordered table-striped"  border='1'>
                     <thead>
                         <tr>
@@ -26,7 +26,10 @@
                             <th scope="col">Nome</th>
                             <th scope="col">Descrição</th>
                             <th scope="col">Peso</th>
-                            <th scope="col">Unidades</th>
+                            <th scope="col">Unidades Estoque</th>
+                            <th scope="col">Nome Fornecedor</th>
+                            <th scope="col">UF Fornecedor</th>
+                            <th scope="col">Site Fornecedor</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +39,9 @@
                             <td>{{ $produto->descricao }}</td>
                             <td>{{ $produto->peso }} kg</td>
                             <td>{{ $produto->unidade }}</td>
+                            <td>{{ $produto->fornecedor->nome }}</td>
+                            <td>{{ $produto->fornecedor->uf }}</td>
+                            <td>{{ $produto->fornecedor->site }}</td>
                         </tr>
                     </tbody>
                 </table>
