@@ -7,7 +7,7 @@
     <title>Fornecedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="titulo-pagina">
-        <h1><br>Cadastrar Novo Fornecedor</h1>
+        <h1><br>Cadastrar Fornecedor</h1>
     </div>
     <div class="menu">
         <ul>
@@ -38,7 +38,6 @@
             <form>
         </div>
     </div>
-
 </div>
 
 @endsection

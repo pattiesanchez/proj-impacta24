@@ -22,7 +22,7 @@
     <input type="text" name="descricao" value="{{ $produto->descricao ?? old('descricao') }}" placeholder="Descrição" class="borda-preta"><br><br>
     {{ $errors->has('descricao') ? $errors->first('descricao') : '' }}
 
-    <input type="text" name="peso" value="{{ $produto->peso ?? old('peso') }}"  placeholder="peso" class="borda-preta"><br><br>
+    <input type="text" name="peso" value="{{ $produto->peso ?? old('peso') }}"  placeholder="Peso (kg)" class="borda-preta"><br><br>
     {{ $errors->has('peso') ? $errors->first('peso') : '' }}
 
   <input type="text" name="unidade" value="{{ $produto->unidade ?? old('unidade') }}"  placeholder="Unidades" class="borda-preta"><br><br>

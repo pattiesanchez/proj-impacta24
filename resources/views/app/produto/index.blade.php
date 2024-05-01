@@ -7,11 +7,11 @@
         <title>Listagem de Produto</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="titulo-pagina">
-            <h1><br>Listagem de Produto</h1>
+            <h1><br>Listagem de Produtos</h1>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="{{ route('produto.create') }}" style="color: black">Novo Produto</a></li>
+                <li><a href="{{ route('produto.create') }}" style="color: black">Cadastrar Novo</a></li>
             </ul>
         </div><br>
 

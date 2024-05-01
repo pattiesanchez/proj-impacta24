@@ -7,7 +7,7 @@
     <title>Fornecedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="titulo-pagina">
-        <h1><br>Pesquisar Fornecedores</h1>
+        <h1><br>Pesquisar Fornecedor</h1>
     </div>
     <div class="menu">
         <ul>
