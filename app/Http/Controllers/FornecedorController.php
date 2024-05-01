@@ -26,9 +26,8 @@ class FornecedorController extends Controller
 
         $msg = '';
         
-        //inclusão
         if($request->input('_token') != '' && $request->input('id') == '') {
-            //validacao
+
             $regras = [
                 'nome' => 'required|min:3|max:40',
                 'site' => 'required',
@@ -50,21 +49,17 @@ class FornecedorController extends Controller
             $fornecedor = new Fornecedor();
             $fornecedor->create($request->all());
 
-            //redirect
-
-            //dados view
-            $msg = 'Cadastro realizado com sucesso';
+            $msg = 'Cadastro realizado com sucesso!';
         }
 
-        //edição
         if($request->input('_token') != '' && $request->input('id') != '') {
             $fornecedor = Fornecedor::find($request->input('id'));
             $update = $fornecedor->update($request->all());
 
             if($update) {
-                $msg = 'Atualização realizada com sucesso';
+                $msg = 'Atualização realizada com sucesso!';
             } else {
-                $msg = 'Erro ao tentar atualizar o registro';
+                $msg = 'Erro ao tentar atualizar o registro!';
             }
 
             return redirect()->route('app.fornecedor.editar', ['id' => $request->input('id'), 'msg' => $msg]);
@@ -81,9 +76,8 @@ class FornecedorController extends Controller
     }
 
     public function excluir($id) {
-        Fornecedor::find($id)->delete();
-        //Fornecedor::find($id)->forceDelete();
+        Fornecedor::find($id)->forceDelete();
 
-        return redirect()->route('app.fornecedor');
+        return redirect()->route('app.fornecedor.listar')->with('msg', 'Fornecedor excluído com sucesso!');
     }
 }
