@@ -32,7 +32,7 @@
                             <tr>
                                 <td>{{ $produto->nome }}</td>
                                 <td>{{ $produto->descricao }}</td>
-                                <td>{{ $produto->peso }}</td>
+                                <td>{{ $produto->peso }} kg</td>
                                 <td>{{ $produto->unidade }}</td>
                                 <td><a href="{{  route('produto.show', ['produto' =>  $produto->id ]) }}" style="color: black">Visualizar</a></td>
                                 <td>

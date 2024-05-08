@@ -13,7 +13,6 @@
         <div class="menu">
             <ul>
                 <li><a href="{{ route('produto.index') }}" style="color: black">Voltar</a></li>
-                <li><a href="{{ route('produto.create') }}" style="color: black">Novo Produto</a></li>
             </ul>
         </div><br><br>
 

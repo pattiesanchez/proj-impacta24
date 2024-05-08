@@ -12,7 +12,6 @@
     <div class="menu">
         <ul>
             <li><a href="{{ route('app.fornecedor.adicionar') }}" style="color: black">Cadastrar Novo</a></li>
-            <li><a href="{{ route('app.fornecedor.listar') }}" style="color: black">Consultar</a></li>
         </ul>
     </div><br>
 
