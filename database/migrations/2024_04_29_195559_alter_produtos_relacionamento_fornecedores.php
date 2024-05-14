@@ -13,9 +13,7 @@ class AlterProdutosRelacionamentoFornecedores extends Migration
      */
     public function up()
     {
-        //criando a coluna em produtos que vai receber a fk de fornecedores
         Schema::table('produtos', function(Blueprint $table) {
-
             //insere um registro de fornecedor para estabelecer o relacionamento
             $fornecedor_id = DB::table('fornecedores')->insertGetId([
                 'nome' => 'Fornecedor Padrão SG',

@@ -36,7 +36,6 @@ Route::get('/fornecedor', 'FornecedorController@index')->name('app.fornecedor');
     Route::get('/fornecedor/editar/{id}/{msg?}', 'FornecedorController@editar')->name('app.fornecedor.editar');
     Route::delete('/fornecedor/excluir/{id}', 'FornecedorController@excluir')->name('app.fornecedor.excluir');
 
-
 Route::fallback(function() {
     echo 'A rota acessada não existe. <a href="'.route('site.home').'">clique aqui</a> para ir para página inicial';
 });

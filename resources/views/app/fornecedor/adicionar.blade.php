@@ -4,15 +4,15 @@
 
 @section('conteudo')
 <div class="conteudo-pagina">
-    <title>Fornecedor</title>
+    <title>Cadastrar Fornecedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="titulo-pagina">
-        <h1><br>Cadastrar Fornecedor</h1>
+        <h1 style="margin-right: 35px"><br>Cadastrar Novo Fornecedor</h1>
     </div>
     <div class="menu">
         <ul>
             <li><a href="{{ route('app.fornecedor') }}" style="color: black">Voltar</a></li>
-            <li><a href="{{ route('app.fornecedor.listar') }}" style="color: black">Consultar</a></li>
+            <li><a href="{{ route('app.fornecedor.listar') }}" style="color: black">Consultar Fornecedores</a></li>
         </ul>
     </div><br>
 

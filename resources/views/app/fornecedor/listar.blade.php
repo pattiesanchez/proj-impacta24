@@ -4,10 +4,10 @@
 
 @section('conteudo')
 <div class="conteudo-pagina">
-    <title>Lista Fornecedor</title>
+    <title>Consultar Fornecedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="titulo-pagina">
-        <h1><br>Listagem de Fornecedores</h1>
+        <h1 style="margin-right: 35px"><br>Lista de Fornecedores</h1>
     </div>
     <div class="menu">
         <ul>

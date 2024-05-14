@@ -5,10 +5,10 @@
 @section('conteudo')
 <div class="conteudo-pagina">
 
-    <title>Editar</title>
+    <title>Editar Produto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="titulo-pagina">
-        <h1><br>Editar Produto</h1>
+        <h1 style="margin-right: 35px"><br>Editar Produto</h1>
     </div>
     <div class="menu">
         <ul>
